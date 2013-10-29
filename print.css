@@ -1,0 +1,59 @@
+
+	
+div.boks	
+	{
+		margin-left: auto;
+		margin-right: auto;
+		text align: center;
+		background-color: white;
+		width: 85%;
+		position: 0;
+		border-radius: 25px;
+		boder-color: white;
+		padding: 3em;
+	}
+
+div.boks2
+	{	
+		padding: 1em;
+		border-style: solid;
+		border-radius: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		border-color: white;
+	}
+	
+body
+	{
+		background-color: white;
+	}
+nav
+	{
+		padding: 1em;
+		border-style: solid;
+		border-radius: 25px;
+		border-color: white;
+		margin-left: auto;
+		margin-right: auto;
+		float: right;
+		position: fixed;
+		left: 930px;
+		color: grey;
+		background-color: white;
+		visibility: hidden;
+	}
+div.limiter
+	{
+		max-width: 700px;
+	}
+nav a:visited
+	{
+		color: white;
+	}
+nav a:link
+	{
+		color: white;
+	}
+	
+	
