@@ -1,4 +1,3 @@
-
 	
 div.boks	
 	{
@@ -36,7 +35,7 @@ nav
 		margin-right: auto;
 		float: right;
 		position: fixed;
-		left: 930px;
+		left: 40em;
 		color: grey;
 		background-color: grey;
 	}
