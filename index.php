@@ -28,7 +28,7 @@
                         </section>
                         <br>
                         <section id="content">
-
+                                 <!-- innhold legges til her med if og elseif statements og php include relativ til ?page -->
                         </section>
                         <br>
                         <section id="bottom_bar">
