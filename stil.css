@@ -1,9 +1,11 @@
-div.boks
+
+	
+div.boks	
 	{
 		margin-left: auto;
 		margin-right: auto;
 		text align: center;
-		background-color: white;
+		background-color: grey;
 		width: 85%;
 		position: 0;
 		border-radius: 25px;
@@ -16,10 +18,39 @@ div.boks2
 		border-style: solid;
 		border-radius: 25px;
 		margin-left: auto;
-		margin-right: auto;		
+		margin-right: auto;
+		background-color: white;
 	}
 	
 body
 	{
-		background-color: white;
+		background-color: black;
 	}
+nav
+	{
+		padding: 1em;
+		border-style: solid;
+		border-radius: 25px;
+		border-color: black;
+		margin-left: auto;
+		margin-right: auto;
+		float: right;
+		position: fixed;
+		left: 930px;
+		color: grey;
+		background-color: grey;
+	}
+div.limiter
+	{
+		max-width: 700px;
+	}
+nav a:visited
+	{
+		color: white;
+	}
+nav a:link
+	{
+		color: white;
+	}
+	
+	
