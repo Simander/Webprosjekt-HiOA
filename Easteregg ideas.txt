@@ -1,0 +1,3 @@
+Ideer til easteregg:
+
+1. Går til siden "om oss", aktiverer "piano", preload lyder for toner og setter enkelte knapper til forskjellige toner på pianoet ( enkelt lydfiler)
