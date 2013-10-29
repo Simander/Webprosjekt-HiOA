@@ -1,3 +1,4 @@
+/*I selve kroppen setter vi et bilde som bakgrunn*/
 body{
 	background-image: url('gitarbakgrunn.jpg');
 	background-repeat:no-repeat;
@@ -5,6 +6,7 @@ body{
 	
 	
 }
+/*midtstilt blokk med gjennomsiktig bakgrunn */
 #centre{
 	background-color: white;
 	background: rgb(255, 255, 255);
@@ -18,6 +20,7 @@ body{
 	padding-top: 1em;
 	
 }
+/*header inneholder en overskrift og en logo)*/
 header{	
 	max-width: 1024px;
 	margin-left: 1em;
@@ -45,6 +48,7 @@ header{
 	float: right;
 	margin-left: 2em;
 }
+/*knapper til nav-bar for elegant navigasjon innad på siden*/
 .menu_button{
 		width: 3em;
 		height: 2em;
@@ -66,20 +70,6 @@ header{
 	border-top-right-radius: 1em;
 	border-bottom-right-radius: 1em;
 }
-/*#nav_menu{
-		max-width: 33em;
-		margin-top: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		background: -webkit-linear-gradient(#ECECEC 5%, #AAAAAA 85%, #ECECEC);
-		background: -o-linear-gradient(#ECECEC 5%, #AAAAAA 85%, #ECECEC);
-		background: -moz-linear-gradient(#ECECEC 5%, #AAAAAA 85%, #ECECEC);
-		background: linear-gradient(#ECECEC 5%, #AAAAAA 85%, #ECECEC);
-		padding: 5px;
-		border-radius: 10px;
-		border: solid #7E8080 1px;
-		
-}*/
 nav{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
@@ -90,6 +80,7 @@ nav{
 	min-width: 40em;
 	
 }
+/* farger på nav linker og respektive knapper ved ulike tilstander*/
 a:link{color: white;
 	text-decoration:none;}
 a:visited{color: white;
@@ -110,6 +101,7 @@ a:active{color: blue;
 	background: -moz-linear-gradient(#607171, #ECECEC 85%, #607171);
 	background: linear-gradient(#607171, #ECECEC 85%, #607171);
 }
+/*innholdsformatering*/
 #content{
 		padding:2em;
 		background: -webkit-linear-gradient(#ECECEC 5%, #AAAAAA 85%, #ECECEC);
@@ -124,6 +116,7 @@ a:active{color: blue;
 		border-radius: 15px;
 
 }
+/*bar langs bunnen av siden, som inneholder footer*/
 #bottom_bar{
 		height: 4em;
 		background-color: #D2D2D8;
