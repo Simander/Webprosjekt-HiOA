@@ -15,6 +15,10 @@ div.boks2
 		margin-right: auto;
 		background-color: white;
 	}
+#teknologier{
+		page-break-inside:avoid;
+		page-break-before:always;
+}
 div.arbeid{
 			page-break-inside: avoid;
 			page-break-after: always;
