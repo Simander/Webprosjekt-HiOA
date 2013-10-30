@@ -15,24 +15,20 @@ div.boks2
 		margin-right: auto;
 		background-color: white;
 	}
-div .arbeid{
+div.arbeid{
 			page-break-inside: avoid;
 			page-break-after: always;
 	
 }
-div .skisse{
+div.skisse{
 		page-break-before: always;
 		page-break-inside: avoid;
 }
-div .goals{
+div.goals{
 		page-break-before: always;
 		page-break-inside: avoid;
 }
 
-body{
-
-         background-color: white;
-}
 
 .noprint{
 
@@ -42,7 +38,4 @@ body{
 nav.noprint{
 	
 	display:none;
-}
-.overskrift{
-	border-bottom: solid: black 2px;
 }
