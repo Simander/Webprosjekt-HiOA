@@ -1,5 +1,5 @@
 <?php
-
+<meta charset="utf-8">
 <h2> Registrer deg som kunde hos oss!</h2>
 
 <form action="kontaktsvar.php" method="get">
