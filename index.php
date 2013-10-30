@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+$page = $_GET 
+
 <html>
         <head>
                 <link rel="stylesheet" title="layout1" href="layout1.css">
@@ -25,6 +27,26 @@
                                                 <a class="menu_button" id="button_5" href="index.php?page=4">Kontakt Oss</a>
                                         </nav>
                                 </div>
+                                <?php
+                                switch ($page){
+                                        case"1":
+                                                include ('bookmusiker.html');
+                                        break;
+                                        
+                                        case "2":
+                                                include ('bookstudio.html');
+                                        break;
+                                        
+                                        case "3":
+                                                include ('')
+                                        
+                                        
+                                        
+                                }
+                                
+                                ?>
+                                
+                                
                         </section>
                         <br>
                         <section id="content">
