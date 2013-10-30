@@ -1,4 +1,3 @@
-
 	
 div.boks	
 	{
@@ -9,7 +8,7 @@ div.boks
 		width: 85%;
 		position: 0;
 		border-radius: 25px;
-		boder-color: white;
+		border-color: white;
 		padding: 3em;
 	}
 
@@ -28,21 +27,14 @@ body
 	{
 		background-color: white;
 	}
-nav
-	{
-		padding: 1em;
-		border-style: solid;
-		border-radius: 25px;
-		border-color: white;
-		margin-left: auto;
-		margin-right: auto;
-		float: right;
-		position: fixed;
-		left: 930px;
-		color: grey;
-		background-color: white;
-		visibility: hidden;
-	}
+nav.noprint{
+	
+	display:none;
+}
+.overskrift{
+	border-bottom: solid: black 2px;
+}
+
 div.limiter
 	{
 		max-width: 700px;
