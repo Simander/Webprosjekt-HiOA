@@ -8,6 +8,7 @@ $page = $_GET ['page'];
                 <link rel="stylesheet" title="layout1" href="layout1.css">
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans:600|Stoke' rel='stylesheet' type='text/css'>
                 <meta charset="UTF-8">
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                 <title>Studio Flagolett</title>
         </head>
         <body>
