@@ -1,6 +1,5 @@
-<?php
-$page = $_GET ['page'];
-?>
+
+
 
 <!DOCTYPE HTML>
 <html>
@@ -30,29 +29,37 @@ $page = $_GET ['page'];
                                                 <a class="menu_button" id="button_5" href="index.php?page=4">Kontakt Oss</a>
                                         </nav>
                                 </div>
+                              
+                                <div id="Content">
                                 <?php
-                                switch ($page){
-                                        case"1":
-                                                include ('bookmusiker.html');
-                                        break;
+                                switch($_GET['page']){
+                                 case 1:
+                                         include_once('bookmusiker.html');
+                                break;
                                         
-                                        case "2":
-                                                include ('bookstudio.html');
-                                        break;
+                                case 2:
+                                        include_once('bookstudio.html');
+                                break;
+                                
+                                case 3: 
+                                        include_once('kontakt.php');
                                         
-                                        case "3":
-                                                include ('kontakt.php');
+                                break;
+                                
+                                case 4:
+                                        include_once('webteam.html')
                                         
-                                       default:
-                                               include ('home.html');
-                                        break;
-                                        
+                                break;
+                                
+                                default:
+                                        include_once('home.html')
+                                  ?>       
+                                         
                                         
                                         
                                 }
                                 
-                                ?>
-                                
+                        </div>
                                 
                         </section>
                         <br>
