@@ -1,4 +1,3 @@
-
 <?php
 $page = $_GET ['page'];
 ?>
@@ -41,7 +40,11 @@ $page = $_GET ['page'];
                                         break;
                                         
                                         case "3":
-                                                include ('')
+                                                include ('kontakt.php');
+                                        
+                                       default:
+                                               include ('home.html');
+                                        break;
                                         
                                         
                                         
