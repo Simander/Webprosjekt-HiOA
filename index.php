@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-$page = $_GET 
 
+<?php
+$page = $_GET ['page'];
+?>
+
+<!DOCTYPE HTML>
 <html>
         <head>
                 <link rel="stylesheet" title="layout1" href="layout1.css">
