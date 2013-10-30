@@ -22,11 +22,32 @@ div.boks2
 		background-color: white;
 		border-color: white;
 	}
+div .arbeid{
+			page-break-inside: avoid;
+			page-break-after: always;
 	
-body
-	{
-		background-color: white;
-	}
+}
+div .skisse{
+		page-break-before: always;
+		page-break-inside: avoid;
+}
+div .goals{
+		page-break-before: always;
+		page-break-inside: avoid;
+}
+
+body{
+
+         background-color: white;
+}
+
+.noprint{
+
+        
+
+        display: none;
+
+}
 nav.noprint{
 	
 	display:none;
