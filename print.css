@@ -3,24 +3,17 @@ div.boks
 	{
 		margin-left: auto;
 		margin-right: auto;
-		text align: center;
 		background-color: white;
 		width: 85%;
-		position: 0;
-		border-radius: 25px;
-		border-color: white;
 		padding: 3em;
 	}
 
 div.boks2
 	{	
 		padding: 1em;
-		border-style: solid;
-		border-radius: 25px;
 		margin-left: auto;
 		margin-right: auto;
 		background-color: white;
-		border-color: white;
 	}
 div .arbeid{
 			page-break-inside: avoid;
@@ -43,8 +36,6 @@ body{
 
 .noprint{
 
-        
-
         display: none;
 
 }
@@ -55,18 +46,3 @@ nav.noprint{
 .overskrift{
 	border-bottom: solid: black 2px;
 }
-
-div.limiter
-	{
-		max-width: 700px;
-	}
-nav a:visited
-	{
-		color: white;
-	}
-nav a:link
-	{
-		color: white;
-	}
-	
-	
