@@ -17,5 +17,5 @@ Test personell
 (Kristian Larsen - Artist)
 (Morten Müller - Artist)
 (Christopher Marchand - Artist)
-(Per Tømmer, Netbooking A/S)
-(Trond Bie - ITavisen journalist / artist)
+Per Tømmer, Netbooking A/S - Spesialist innen "booking" tjenester, ønsker å være med på testing
+Trond Bie - ITavisen journalist / Artist - Kunne gjerne tenke seg å være med på testing
