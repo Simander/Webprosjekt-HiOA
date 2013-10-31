@@ -1,5 +1,10 @@
-
-
+<?php
+if(!empty($_GET)){
+	$page = $_GET['page'];
+} else {
+	$page = "";
+}
+?>
 
 <!DOCTYPE HTML>
 <html>
@@ -22,7 +27,7 @@
                         <br>
                                 <div id="nav_menu">
                                         <nav>
-                                                <a class="menu_button" id="button_1" href="index.php">Forside</a>
+                                                <a class="menu_button" id="button_1" href="index.php?page=default">Forside</a>
                                                 <a class="menu_button" id="button_2" href="index.php?page=1">Book Studioet</a>
                                                 <a class="menu_button" id="button_3" href="index.php?page=2">Book Musikere</a>
                                                 <a class="menu_button" id="button_4" href="index.php?page=3">Om Oss</a>
@@ -31,40 +36,43 @@
                                 </div>
                               
                                 <div id="Content">
-                                <?php
-                                switch($_GET['page']){
-                                 case 1:
-                                         include_once('bookmusiker.html');
-                                break;
-                                        
-                                case 2:
-                                        include_once('bookstudio.html');
-                                break;
-                                
-                                case 3: 
-                                        include_once('kontakt.php');
-                                        
-                                break;
-                                
-                                case 4:
-                                        include_once('webteam.html')
-                                        
-                                break;
-                                
-                                default:
-                                        include_once('home.html')
-                                  ?>       
-                                         
-                                        
-                                        
-                                }
-                                
+                               
                         </div>
                                 
                         </section>
                         <br>
                         <section id="content">
                                  <!-- innhold legges til her med if og elseif statements og php include relativ til ?page -->
+								  <?php
+                                switch($page)
+								{
+                                 case 1:
+									include('bookmusiker.html');
+                                break;
+                                        
+                                case 2:
+									include('bookstudio.html');
+                                break;
+                                
+                                case 3: 
+									include('kontakt.php');
+                                        
+                                break;
+                                
+                                case 4:
+									include('webteam.html');
+                                        
+                                break;
+                                
+                                default:
+									include('home.html');
+								}
+								?>       
+                                         
+                                        
+                                        
+                               
+                                
                         </section>
                         <br>
                         <section id="bottom_bar">
