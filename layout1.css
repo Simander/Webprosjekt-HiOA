@@ -30,7 +30,6 @@ header{
 	background-color: white;
 	border: solid black 2px;
 	height: 4em;
-	width: 1
 	padding-left: 1em;
 		background: -webkit-linear-gradient(#ECECEC 65%, #AAAAAA 15%, #ECECEC);
 		background: -o-linear-gradient(#ECECEC 65%, #AAAAAA 15%, #ECECEC);
@@ -88,7 +87,7 @@ a:visited{color: white;
 	text-decoration:none;}
 a:hover{color: red; 
 	text-decoration:none;
-	background: #607171
+	background: #607171;
 	background: -webkit-linear-gradient(#ECECEC 5%, #607171 85%, #ECECEC);
 	background: -o-linear-gradient(#ECECEC 5%, #607171 85%, #ECECEC);
 	background: -moz-linear-gradient(#ECECEC 5%, #607171 85%, #ECECEC);
@@ -96,7 +95,7 @@ a:hover{color: red;
 }
 a:active{color: blue;
 	text-decoration:none;
-	background: #607171
+	background: #607171;
 	background: -webkit-linear-gradient(#607171, #ECECEC 85%, #607171);
 	background: -o-linear-gradient(#607171, #ECECEC 85%, #607171);
 	background: -moz-linear-gradient(#607171, #ECECEC 85%, #607171);
