@@ -1,41 +1,24 @@
-<?php
-<meta charset="utf-8">
-<h2> Registrer deg som kunde hos oss!</h2>
-
-<form action="kontaktsvar.php" method="get">
-
-Navn: <br/>
-<input type="text" name="navn"/><br/>
-
-Adresse: <br/>
-<input type="text" name="adresse"/><br/>
-
-Telefon: <br/>
-<input type="text" name="telefon"/><br/>
-
-Mail: <br/>
-<input type="text" name="mail"/><br/>
-</select><br/>
 
 
-Ønsker du å få tilbakemelding per telefon eller email?
 
-<input type="radio" name="tilbake" value="Via telefon"/><br/><br/>
-
-<input type="radio" name?"tilbake" value="Via mail"/><br/><br/>
-
-
-<form method="post" action="<br/> <br/>">
-
-<textarea rows="5" cols="20" name="svar"> Hva lurer du på?</textarea>
-
-<input type="submit" value="Send inn" name="knapp"/>
-
+<form action="mailform.php" method="post">
+<p id="e-post_navn">
+Navn:<br /><input type="text" name="navn" size="20" maxlength="50" tabindex="1" />
+</p>
+ 
+<p id="e-post_epost">
+E-post:<br /><input type="text" name="epost" size="20" maxlength="50" tabindex="2" />
+</p>
+ 
+<p id="e-post_melding">Melding:<br />
+<textarea cols="72" rows="10" name="tekst" tabindex="3" class="e-post_melding">
+</textarea><br />
+ 
+<input type="submit" name="submit" value="Send" tabindex="4" class="epost_knapp" />
+<input type="reset" name="reset" value="Slett" tabindex="5" class="epost_knapp" />
+ 
 </form>
 
 
 
 
-
-
-?>
