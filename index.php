@@ -21,7 +21,7 @@ if(!empty($_GET)){
                                 <header>
                                         <!-- Vi kan eventuelt gjøre så overskiften endres etter ?page -->
                                         <!--  med php if/elseif statements og php include -->
-                                        <h1 class="overskrift">Studio Flagolett</h1>
+                                        <img id="logostor" src="logo2.png">
                                         <img id="logo" width="80" height="80" src="https://scontent-b.xx.fbcdn.net/hphotos-prn2/1383817_10152001786677464_2050141297_n.jpg" alt="logo">
                                 </header>
                         <br>
