@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html lang="to">
+<head>
+  <meta charset="utf-8">
+  <title>slideUp demo</title>
+  <style>
+  
+  #div1{
+  text-align:center;
+  top:100px;
+  vertical-align:center;
+  horizontal-align:center;
+  animation: fadeIn 2s;
+  
+  }
+  
+
+  #div2
+  {
+  text-align:center;
+  top:100px;
+  
+  
+  }
+    
+   
+   button.goBack
+  {
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	text-align:center;
+	}
+	
+	
+  
+  </style>
+  
+  
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+<style>
+body 
+{
+background-image:url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzRE4emPleFPxGD3yQ__-KBbZR9YUOAzIxhuxdvMIFGiC_Sd7k');
+
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("button").click(function(slow){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle();
+    
+  });
+});
+</script>
+
+</head>
+<body>
+ <button class="goBack"  onclick="goBack()"></button>
+ 
+ <button class="goNext" onclick="goNext()"></button>
+<div id="div1" style="display:">
+<img src="studio.jpg" style="height:500px; width:450px;"  /> 
+</div>
+
+<div id="div2" style="display:none">
+<img src="Manta_Sound_Studio.jpg" style="height:500px; width450px;"  />
+</div>
+
+
+
+<script>
+function ChangeImage() {
+  if ( $("#div1" ).css("display") == "none" ) {
+    $( "#div2" ).css( "display" , "none");
+	$( "#div1" ).css( "display" , "");
+  } else {
+    $( "#div1" ).css( "display" , "none");
+	$( "#div2" ).css( "display" , "");
+  }
+}
+ 
+
+  
+</script>
+
+ 
+</body>
+</html>
