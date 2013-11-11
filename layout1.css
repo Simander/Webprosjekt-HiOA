@@ -115,6 +115,128 @@ a:active{color: blue;
 		border-radius: 15px;
 
 }
+/*new code*/
+#kontakt_skjema{
+		width: 38em;
+		background-color: #5A5A5A;
+		padding: 1em;
+		border-radius: 15px;
+}
+.mail_form{
+		color: white;
+}
+#group{
+	float: left;
+}
+#hidden_shell{
+			
+		float:left;
+		position: inherit;
+		z-index: auto;
+
+		
+		width: 240px;
+		height: 150px;
+		margin-left: 12em;
+		background-color: green; 
+}
+#shell_img{
+		border: solid black 2px;
+		position: absolute;
+		z-index: auto;
+}
+#easter_object{
+		left: 10em;
+		position: relative;
+		
+		margin-right: auto;
+		margin-bottom: auto;
+		border-radius: 30px;
+		width: 4em;
+		height: 2em;
+		z-index: auto;
+}
+#easter_info{
+		padding: 1em;
+		width: 500px;
+}
+#A{
+		
+		padding: 1em;
+		float: left;
+}
+#e-post_melding{
+		clear: both;
+}
+/*piano.css*/
+div .ebony, .ivory{
+	float: left;
+}
+#piano{
+	width: 29em;
+	height: 16em;
+	background-color: black;
+	border-radius: 2em;
+}
+audio .piano{
+		display:none;
+}
+#tittel{
+	left: 23em;
+	top: 2em;
+	position: relative;
+	color: white;
+	z-index: auto;
+}
+#keys{
+	position: relative;
+	top: 4em;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-left: 2em; 
+	width: 25em;
+	height: 10em;
+	background-color: #B20000;
+}
+#blacks1{
+	top: 0.5em;
+	position: absolute;
+	margin-left: 1em;
+	z-index:1;
+}
+#blacks2{
+	top: 0.5em;
+	position: absolute;
+	margin-left: 10.5em;
+	z-index:1;
+}
+#whites{
+	position: relative;
+	top: 0.5em;
+	width: 30em;
+	height: 10em;
+	z-index:0;
+}
+.ebony
+{
+		
+	border: solid black 1px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: white;
+	width: 3em;
+	height: 10em;
+}
+.ivory
+{
+	margin-left: 1em;
+	border: solid black 1px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: grey;
+	height: 5em;
+	width: 2em;	
+}
 /*bar langs bunnen av siden, som inneholder footer*/
 #bottom_bar{
 		height: 4em;
