@@ -2,13 +2,14 @@
 <div id="kontakt_skjema">
   <form action="mailform.php" method="post">
   
-  <p class="mail_form" id="e-post_navn">
+  <div id="group"> <p class="mail_form" id="e-post_navn">
   Navn:<br /><input type="text" name="navn" size="20" maxlength="50" tabindex="1" />
   </p>
  
   <p class="mail_form" id="e-post_epost">
   E-post:<br /><input type="text" name="epost" size="20" maxlength="50" tabindex="2" />
   </p>
+  </div>
 
 <div id="hidden_shell">
  <img id="shell_img" width="240" height="150" src="https://dl-web.dropbox.com/get/mixer.jpg?w=AACFNe9by9bzDHu4HTfC8hdW0mxEElcvcNYyNrZ4VkZ3_w">
