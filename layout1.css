@@ -35,8 +35,7 @@ header{
 		background: -o-linear-gradient(#ECECEC 65%, #AAAAAA 15%, #ECECEC);
 		background: -moz-linear-gradient(#ECECEC 65%, #AAAAAA 15%, #ECECEC);
 		background: linear-gradient(#ECECEC 65%, #AAAAAA 15%, #ECECEC);
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
+	border-radius: 15px;
 }
 .overskrift{
 	padding-right: 1em;
