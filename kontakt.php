@@ -11,7 +11,7 @@
   </p>
 
 <div id="hidden_shell">
- <img id="shell_img" width="240" height="150" src="mixer.jpg">
+ <img id="shell_img" width="240" height="150" src="https://dl-web.dropbox.com/get/mixer.jpg?w=AACFNe9by9bzDHu4HTfC8hdW0mxEElcvcNYyNrZ4VkZ3_w">
  <div id="easter_object"></div>
 </div>
  
