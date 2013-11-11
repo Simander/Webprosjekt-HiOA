@@ -63,6 +63,10 @@ if(!empty($_GET)){
                                         
                                 break;
                                 
+                                case 5:
+                                					include('piano.html');
+                                break;
+                                
                                 default:
 									include('home.html');
 								}
