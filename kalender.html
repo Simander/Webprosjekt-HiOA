@@ -2,23 +2,76 @@
 <head>
 	<script src="http://code.angularjs.org/1.2.0/angular.min.js"></script>
 	<script src="kalender.js"></script>
+	<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var month = currentTime.getMonth() + 1
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+if (day > month.length){
+	month++}
+
+$(".farge").click(function(){
+$(this).css("background-color", "black");
+}); 
+//-->
+</script>
 
 <body>
+
 	<table border="1">
 	<tr>
 		<th>Time - tidsindex</th>
-		<th>Mandag - get dato</th>
-		<th>Tirsdag - get dato</th>
-		<th>Onsdag - get dato</th>
-		<th>Torsdag - get dato</th>
-		<th>Fredag - get dato</th>
-		<th>Lørdag - get dato</th>
-		<th>Søndag - get dato</th>
+		<th>Mandag
+			<script>
+				document.write(day + "/" + month + "/" + year)
+			</script>
+		</th>
+		<th>Tirsdag
+			<script>
+				document.write((day+1) + "/" + month + "/" + year)
+			</script>
+		</th>
+		<th>Onsdag
+		<script>
+				document.write((day+2) + "/" + month + "/" + year)
+		</script>
+		</th>
+		<th>Torsdag
+		<script>
+			document.write((day+3) + "/" + month + "/" + year)
+		</script>
+		</th>
+		<th>Fredag
+		<script>
+			document.write((day+4) + "/" + month + "/" + year)
+		</script>
+		</th>
+		
+		<th>Lørdag
+		<script>
+				document.write((day+5) + "/" + month + "/" + year)
+			</script>
+		</th>
+		<th>Søndag
+		<script>
+				document.write((day+6) + "/" + month + "/" + year)
+				day = (day + 6);
+			</script>
+		</th>
 	</tr>
 		<tr>
-			<td>Hour</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
+			<td>00:00</td>
+			<td>
+				
+				<div class="farge">
+					
+				</div>
+			</td>
+			<td>	
+				<div class="farge">
+				</div>
+			</td>
 			<td>row 1, cell 4</td>
 			<td>row 1, cell 5</td>
 			<td>row 1, cell 6</td>
@@ -26,7 +79,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>01:00</td>
 			<td>row 2, cell 2</td>
 			<td>row 2, cell 3</td>
 			<td>row 2, cell 4</td>
@@ -36,7 +89,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>02:00</td>
 			<td>row 3, cell 2</td>
 			<td>row 3, cell 3</td>
 			<td>row 3, cell 4</td>
@@ -46,7 +99,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>03:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -56,7 +109,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>04:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -66,7 +119,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>05:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -76,7 +129,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>06:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -86,7 +139,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>07:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -96,7 +149,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>08:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -106,7 +159,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>09:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -116,7 +169,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>10:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -126,7 +179,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>11:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -136,7 +189,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>12:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -146,7 +199,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>13:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -156,7 +209,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>14:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -166,7 +219,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>15:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -176,7 +229,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>16:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -186,7 +239,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>17:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -196,7 +249,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>18:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -206,7 +259,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>19:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -216,7 +269,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>20:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -226,7 +279,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>21:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -236,7 +289,7 @@
 			<td>row 1, cell 1</td>
 		</tr>
 		<tr>
-			<td>Hour</td>
+			<td>22:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
@@ -245,7 +298,7 @@
 			<td>row 1, cell 1</td>
 			<td>row 1, cell 1</td>
 		</tr>
-			<td>Hour</td>
+			<td>23:00</td>
 			<td>row 1, cell 2</td>
 			<td>row 1, cell 3</td>
 			<td>row 1, cell 4</td>
