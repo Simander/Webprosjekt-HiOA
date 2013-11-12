@@ -48,6 +48,11 @@ header{
 	float: right;
 	margin-left: 2em;
 }
+#logostor{
+		position: relative;
+		width: 20em;
+		height: 5em;
+}
 /*knapper til nav-bar for elegant navigasjon innad på siden*/
 .menu_button{
 		width: 3em;
