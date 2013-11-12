@@ -21,7 +21,7 @@ if(!empty($_GET)){
                                 <header>
                                         <!-- Vi kan eventuelt gjøre så overskiften endres etter ?page -->
                                         <!--  med php if/elseif statements og php include -->
-                                        <img id="logostor" src="logo2.png">
+                                        <img id="logostor" src="logo3.png">
                                 </header>
                         <br>
                                 <div id="nav_menu">
