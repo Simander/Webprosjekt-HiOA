@@ -1,8 +1,28 @@
 <html>
 <head>
+	<link rel="stylesheet" title="fargestil" href="fargestil.css">
 	<script src="http://code.angularjs.org/1.2.0/angular.min.js"></script>
-	<script src="kalender.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+            window.onload = function() {
+                var labels = document.getElementsByTagName('table');
+                for (var i = 0; i < labels.length; i++) {
+                    disableSelection(labels[i]);
+                }
+            };
+            function disableSelection(element) {
+                if (typeof element.onselectstart != 'undefined') {
+                    element.onselectstart = function() { return false; };
+                } else if (typeof element.style.MozUserSelect != 'undefined') {
+                    element.style.MozUserSelect = 'none';
+                } else {
+                    element.onmousedown = function() { return false; };
+                }
+            }
+        </script>
+<!--	<script src="kalender.js"></script> -->
 	<script type="text/javascript">
+<!--	$(document).ready(function(){
 <!--
 var currentTime = new Date()
 var month = currentTime.getMonth() + 1
@@ -10,302 +30,980 @@ var day = currentTime.getDate()
 var year = currentTime.getFullYear()
 if (day > month.length){
 	month++}
-
-$(".farge").click(function(){
-$(this).css("background-color", "black");
-}); 
-//-->
+var opptatt = false
 </script>
-
 <body>
-
-	<table border="1">
+	<div class="kalender boks">
+		<table border="1">
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('div.farge').click(function(){
+				$(this).css({'background-color':'red'});
+				$(this).text('opptatt');
+				$opptatt = true;
+			});
+			$('div.farge').dblclick(function(){
+				$(this).css({'background-color':'green'});
+				$(this).text('ledig');
+				$opptatt = false;
+			});
+		}); 
+		</script>
+		<tr>
+			<th>Time</th>
+			<th>Monday
+				<script>
+					document.write(day + "/" + month + "/" + year)
+				</script>
+			</th>
+			<th>Tuesday
+				<script>
+					document.write((day+1) + "/" + month + "/" + year)
+				</script>
+			</th>
+			<th>Wednesday
+			<script>
+					document.write((day+2) + "/" + month + "/" + year)
+			</script>
+			</th>
+			<th>Thursday
+			<script>
+				document.write((day+3) + "/" + month + "/" + year)
+			</script>
+			</th>
+			<th>Friday
+			<script>
+				document.write((day+4) + "/" + month + "/" + year)
+			</script>
+			</th>
+			
+			<th>Saturday
+			<script>
+					document.write((day+5) + "/" + month + "/" + year)
+				</script>
+			</th>
+			<th>Sunday
+			<script>
+					document.write((day+6) + "/" + month + "/" + year)
+					day = (day + 6);
+				</script>
+			</th>
+		</tr>
+			<tr>
+				<td>00:00</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
 	<tr>
-		<th>Time - tidsindex</th>
-		<th>Mandag
-			<script>
-				document.write(day + "/" + month + "/" + year)
-			</script>
-		</th>
-		<th>Tirsdag
-			<script>
-				document.write((day+1) + "/" + month + "/" + year)
-			</script>
-		</th>
-		<th>Onsdag
-		<script>
-				document.write((day+2) + "/" + month + "/" + year)
-		</script>
-		</th>
-		<th>Torsdag
-		<script>
-			document.write((day+3) + "/" + month + "/" + year)
-		</script>
-		</th>
-		<th>Fredag
-		<script>
-			document.write((day+4) + "/" + month + "/" + year)
-		</script>
-		</th>
-		
-		<th>Lørdag
-		<script>
-				document.write((day+5) + "/" + month + "/" + year)
-			</script>
-		</th>
-		<th>Søndag
-		<script>
-				document.write((day+6) + "/" + month + "/" + year)
-				day = (day + 6);
-			</script>
-		</th>
-	</tr>
-		<tr>
-			<td>00:00</td>
-			<td>
-				
+				<td>01:00</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
 				<div class="farge">
-					
-				</div>
-			</td>
-			<td>	
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
 				<div class="farge">
+					ledig
 				</div>
-			</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>01:00</td>
-			<td>row 2, cell 2</td>
-			<td>row 2, cell 3</td>
-			<td>row 2, cell 4</td>
-			<td>row 2, cell 5</td>
-			<td>row 2, cell 6</td>
-			<td>row 2, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>02:00</td>
-			<td>row 3, cell 2</td>
-			<td>row 3, cell 3</td>
-			<td>row 3, cell 4</td>
-			<td>row 3, cell 5</td>
-			<td>row 3, cell 6</td>
-			<td>row 3, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>03:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>04:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>05:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>06:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>07:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>08:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>09:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>10:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>11:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>12:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>13:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>14:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>15:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>16:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>17:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>18:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>19:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>20:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>21:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-		<tr>
-			<td>22:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-			<td>23:00</td>
-			<td>row 1, cell 2</td>
-			<td>row 1, cell 3</td>
-			<td>row 1, cell 4</td>
-			<td>row 1, cell 5</td>
-			<td>row 1, cell 6</td>
-			<td>row 1, cell 1</td>
-			<td>row 1, cell 1</td>
-		</tr>
-	</table>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>02:00</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>03:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>04:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>05:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>06:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>07:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>		<tr>
+				<td>08:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>		</tr>
+			<tr>
+				<td>09:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>10:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>11:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>12:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>		<tr>
+				<td>13:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>14:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>15:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>16:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>17:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>18:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>19:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>20:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>21:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>22:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+				<td>23:00</td>
+							<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>	
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+					<div class="farge">
+					ledig
+					</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+				<td>
+				<div class="farge">
+					ledig
+				</div>
+				</td>
+			</tr>
+		</table>
+		<button class="bck">
+			Previous week
+		</button>
+		<button class="nxt">
+			Next week
+		</button>		
+	</div>	
 </body>
