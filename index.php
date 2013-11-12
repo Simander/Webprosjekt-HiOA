@@ -54,16 +54,16 @@ if(!empty($_GET)){
                                 break;
                                 
                                 case 3: 
-									include('kontakt.php');
-                                        
-                                break;
-                                
-                                case 4:
 									include('webteam.html');
                                         
                                 break;
                                 
-                                case 5:
+                                case 4:
+									include('kontakt.php');
+                                        
+                                break;
+                                
+                                case hidden:
                                 					include('piano.html');
                                 break;
                                 

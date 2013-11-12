@@ -115,7 +115,7 @@ a:active{color: blue;
 		border-radius: 15px;
 
 }
-/*new code*/
+/*kontakt skjema*/
 #kontakt_skjema{
 		width: 38em;
 		background-color: #5A5A5A;
@@ -128,6 +128,7 @@ a:active{color: blue;
 #group{
 	float: left;
 }
+/*easter_egg*/
 #hidden_shell{
 			
 		float:left;
@@ -236,6 +237,18 @@ audio .piano{
 	background-color: grey;
 	height: 5em;
 	width: 2em;	
+}
+/*knapper*/
+.button{
+		width: 3em;
+		height: 2em;
+		padding-left:1em;
+		padding-right:1em;
+		background: -webkit-linear-gradient(#ECECEC 5%, #AAAAAA 85%, #ECECEC);
+		background: -o-linear-gradient(#ECECEC 5%, #AAAAAA 85%, #ECECEC);
+		background: -moz-linear-gradient(#ECECEC 5%, #AAAAAA 85%, #ECECEC);
+		background: linear-gradient(#ECECEC 5%, #AAAAAA 85%, #ECECEC);
+		border: solid black 1px;
 }
 /*bar langs bunnen av siden, som inneholder footer*/
 #bottom_bar{
