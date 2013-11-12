@@ -63,7 +63,7 @@ if(!empty($_GET)){
                                         
                                 break;
                                 
-                                case hidden:
+                                case 'hidden':
                                 					include('piano.html');
                                 break;
                                 
