@@ -6,19 +6,13 @@ if(!empty($_GET)){
 }
 ?>
 
-<!doctype html>
-<html lang="no">
-<head>
-	<meta charset="UTF-8">
-		<title> Book Studio</title>
-</head>
-<body>
+
 	<h2>
 		<b>Book Studio</b>
 	</h2>
 	
 	<div class="innhold">
-		<section class="calendar>
+		<div class="calendar>
 			  <?php
                                 switch($page)
 								{                                
@@ -83,4 +77,3 @@ if(!empty($_GET)){
 			<ul>
 		</article>
 	</div>
-</body>
