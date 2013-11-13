@@ -46,11 +46,11 @@ if(!empty($_GET)){
                                 switch($page)
 								{
                                  case 1:
-									include('bookmusiker.html');
+									include('bookstudio.php');
                                 break;
                                         
                                 case 2:
-									include('bookstudio.html');
+									include('bookmusiker.html');
                                 break;
                                 
                                 case 3: 
