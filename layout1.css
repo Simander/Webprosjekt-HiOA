@@ -29,7 +29,7 @@ header{
 	font-family: 'Stoke', serif;
 	font-size: 20px;
 	background-color: white;
-	border: solid black 2px;
+	border: solid black 1px;
 	height: 6em;
 	padding: 1em;
 		background: -webkit-linear-gradient(#4D6277 65%, #AAAAAA 15%, #4D6277);
@@ -258,7 +258,7 @@ audio .piano{
 #bottom_bar{
 		height: 4em;
 		background-color: #D2D2D8;
-		border: solid black 2px;
+		border: solid black 1px;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		padding: 1em;
