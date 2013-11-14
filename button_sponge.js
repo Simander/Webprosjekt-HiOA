@@ -33,21 +33,21 @@ $(document).ready(function(){
 			
 		//initialiserer variabelen i som brukes for indeks til arrayet.  
 		$i = 0;
-				
+		$siste_bilde = bilde_galleri.length -1;		
 		//Bestemmer hva som skjer om knapp #left klikkes. ingen linjer kan fjernes!!
 		$("#left").click(function(){
 				if($i > 0)
 					$i-=1;
 				else if($i == 0)
-					$i = bilde_galleri.length;
+					$i = $siste_bilde;
 		 		document.getElementById("mittBilde").src = bilde_galleri[$i].src;	    
 		});
 				
 		//Bestemmer hva som skjer om knapp #right klikkes. ingen linjer kan fjernes!!
 		$("#right").click(function(){
-				if($i < bilde_galleri.length)
+				if($i < $siste_bilde)
 			    		$i+=1;
-				else if($i == bilde_galleri.length)
+				else if($i == $siste_bilde)
 					$i = 0;
 				document.getElementById("mittBilde").src = bilde_galleri[$i].src;	    
 		});
