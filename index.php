@@ -69,6 +69,7 @@ if(!empty($_GET)){
                                 
                                 default:
 									include('home.html');
+									include('bilde_galleri.php')
 								}
 								?>       
                                          
