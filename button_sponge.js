@@ -40,10 +40,10 @@ $(document).ready(function(){
                                         $i-=1;
                                 else if($i == 0)
                                         $i = $siste_bilde;
-				$("#mittBilde").fadeToggle(500);
-				setTimeout(function() {  document.getElementById("mittBilde").src = bilde_galleri[$i].src;},500);
-				$("#mittBilde").fadeIn();
-                               
+				$("#mittBilde").stop();
+				$("#mittBilde").fadeOut(0);
+				document.getElementById("mittBilde").src = bilde_galleri[$i].src;
+				$("#mittBilde").fadeIn(600);
 				            
                 });
                                 
@@ -53,8 +53,9 @@ $(document).ready(function(){
                                             $i+=1;
                                 else if($i == $siste_bilde)
                                         $i = 0;
-				$("#mittBilde").fadeToggle(500);
-				setTimeout(function() {  document.getElementById("mittBilde").src = bilde_galleri[$i].src;},500);
-				$("#mittBilde").fadeIn();
+				$("#mittBilde").stop();
+				$("#mittBilde").fadeOut(0);
+				document.getElementById("mittBilde").src = bilde_galleri[$i].src;
+				$("#mittBilde").fadeIn(600);
                 });
 });
