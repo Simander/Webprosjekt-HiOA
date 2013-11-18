@@ -1,8 +1,10 @@
-
 <meta charset="utf-8">
 
 <?php
-@session_start();
+error_reporting(E_ALL);
+
+
+session_start();
 //@session_start(); //@ gjør at feilmelding ikke vises
 if (isset($_SESSION['innlogget'])) {
 
