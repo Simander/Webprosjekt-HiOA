@@ -9,7 +9,7 @@ echo ("Du må fylle ut alle feltene!");
 }
 else
 {
-$sendto = "joakimtommer@gmail.com"; // Skriv inn din e-mail.
+$sendto = "kontakt.flagolett@gmail.com"; // Skriv inn din e-mail.
 $subject = "Her kan du skrive en tittel"; // Her velger du tittel.
 $ip = ( $_SERVER["REMOTE_ADDR"] );
 $message = "
