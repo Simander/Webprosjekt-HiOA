@@ -1,9 +1,7 @@
 <html>
 <head>
-	
-	<script src="http://code.angularjs.org/1.2.0/angular.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>
+	<script> 
             window.onload = function() {
                 var labels = document.getElementsByTagName('table');
                 for (var i = 0; i < labels.length; i++) {
@@ -30,6 +28,7 @@ var day = currentTime.getDate()
 var year = currentTime.getFullYear()
 if (day > month.length){
 	month++}
+var weekno = today.getWeek()
 var opptatt = false
 </script>
 <style>
@@ -58,17 +57,64 @@ table
 }
 </style>
 <body>
-	<h2>
-	
-		<script>
-			var monthtext = "";
-			if (month = 11)
+	<h2 id="mnd">test</h2>
+		<script type = "text/javascript">
+			$('#mnd').text('Apekatt');
+			if (month == 1)
 			{
-				$'h2'.text('november');
-				
+				$('#mnd').text('Januar');
+			}
+			if (month ==2)
+			{
+				$('#mnd').text('Februar');
+			}
+			if (month ==3)
+			{
+				$('#mnd').text('Mars');	
+			}
+			if (month ==4)
+			{
+				$('#mnd').text('April');
+			}
+			if (month ==5)
+			{
+				$('#mnd').text('Mai');
+			}
+			if (month ==6)
+			{
+				$('#mnd').text('Juni');
+			}
+			if (month ==7)
+			{
+				$('#mnd').text('Juli');
+			}
+			if (month ==8)
+			{
+				$('#mnd').text('August');	
+			}
+			if (month == 9)
+			{
+				$('#mnd').text('September');	
+			}
+			if (month == 10)
+			{
+				$('#mnd').text('Oktober');
+			}
+			if (month ==11)
+			{
+				$('#mnd').text('November');
+			}
+			if (month ==12)
+			{
+				$('#mnd').text('Desember');
 			}
 		</script>
-	</h2>	
+		<h2 id = "week">
+			
+		</h2>
+		<script type = "text/javascript">
+			$('#week')document.write(weekno);
+		</script>
 	<div class="kalender boks">
 		<table border="1">
 		<script type="text/javascript">
@@ -81,44 +127,44 @@ table
 			$('div.farge').dblclick(function(){
 				$(this).css({'background-color':'green'});
 				$(this).text('ledig');
-				$opptatt = false;
+				$(this)opptatt = false;
 			});
 		}); 
 		</script>
 		<tr>
 			<th>Time</th>
-			<th>Monday
+			<th>
 				<script>
 					document.write(day + "/" + month + "/" + year)
 				</script>
 			</th>
-			<th>Tuesday
+			<th>
 				<script>
 					document.write((day+1) + "/" + month + "/" + year)
 				</script>
 			</th>
-			<th>Wednesday
+			<th>
 			<script>
 					document.write((day+2) + "/" + month + "/" + year)
 			</script>
 			</th>
-			<th>Thursday
+			<th>
 			<script>
 				document.write((day+3) + "/" + month + "/" + year)
 			</script>
 			</th>
-			<th>Friday
+			<th>
 			<script>
 				document.write((day+4) + "/" + month + "/" + year)
 			</script>
 			</th>
 			
-			<th>Saturday
+			<th>
 			<script>
 					document.write((day+5) + "/" + month + "/" + year)
 				</script>
 			</th>
-			<th>Sunday
+			<th>
 			<script>
 					document.write((day+6) + "/" + month + "/" + year)
 					day = (day + 6);
@@ -1035,11 +1081,6 @@ table
 				</td>
 			</tr>
 		</table>
-		<button class="bck">
-			Previous week
-		</button>
-		<button class="nxt">
-			Next week
-		</button>		
+		
 	</div>	
 </body>
