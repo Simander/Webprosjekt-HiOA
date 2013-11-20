@@ -5,7 +5,26 @@ if(!empty($_GET)){
 	$page = "";
 }
 ?>
-
+	<style>#sound, #skjul{padding: 1em; width: 16em; height: 1em; color: white;
+				text-shadow: 2px 1px #5B6262;				
+				border-radius: 10px; 
+				-webkit-touch-callout: none;
+                                -webkit-user-select: none;
+                                -khtml-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                                cursor: pointer;}
+  			#skjul{ margin-left: 400px;   }                     
+                       </style>
+		<script src="audio_gallery.js"></script>
+		<div id="sound" class="menu_button"><strong>Lytt til eksempler på lyd fra studioet.</strong></div>
+		<div id="skjul" class="menu_button"><strong>Skjul Lydavspilleren.</strong></div>
+		<div id="audio_samples">
+			<h1>Lydgalleri fra SoundCloud</h1>
+			<!-- Legger til soundcloud playlist -->
+			<iframe width="700" height="600" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/15090033"></iframe>
+		</div>
 
 	<h2>
 		<b>Book Studio</b>
