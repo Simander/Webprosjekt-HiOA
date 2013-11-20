@@ -1,0 +1,44 @@
+<?php
+if(!empty($_GET)){
+	$page = $_GET['page'];
+} else {
+	$page = "";
+}
+?>
+<body>
+	<div id="adminframe"> <!-- Hovedvindu-->
+		<section id="navigasjon"> <!-- Navigasjonsbar-->
+			<button id="mail"> <!-- Epost knapp, access login gmail-->
+				E-post
+			</button>
+			<button id="soundcloud"> <!-- Soundcloud admin knapp, access login soundcloud-->
+				Soundcloud Admin
+			</button>
+			<button id="kalender"> <!-- trykkbar versjon av kalender html, endringer skjer her-->
+				Kalender Admin
+			</button>
+		</section>
+		<div id="include"> <!-- vindu hvor sidene blir inkludert-->
+			<?php
+				switch($page)
+				{
+				 case 1:
+					include('https://mail.google.com');
+				break;
+						
+				case 2:
+					include('https://soundcloud.com/login');
+				break;
+				
+				case 3: 
+					include('kalender.html');
+						
+				break;
+				
+				default:
+					include('nothing.html');
+				}
+			?>			
+		</div>
+	</div>
+</body>

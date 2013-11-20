@@ -9,7 +9,7 @@ session_start();
 if (isset($_SESSION['innlogget'])) {
 
 
-	echo "<p>DU KLARTE Å LOGGE DEG INN!! WHOPPPPP" . $_SESSION['navn'] . "</p>";
+	echo "<p>DU KLARTE Å LOGGE DEG INN!! WHOPPPPP" . $_SESSION['navn'] . "</p>"; 
 
 }
 
@@ -19,3 +19,4 @@ if (isset($_SESSION['innlogget'])) {
 	}
 
 ?>
+
