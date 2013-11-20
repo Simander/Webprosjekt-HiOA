@@ -5,6 +5,10 @@ if(!empty($_GET)){
 	$page = "";
 }
 ?>
+
+<head>
+	<link rel="stylesheet" title="layout1" href="adminstil.css">
+</head>
 <body>
 	<div id="adminframe"> <!-- Hovedvindu-->
 		<section id="navigasjon"> <!-- Navigasjonsbar-->
@@ -33,7 +37,7 @@ if(!empty($_GET)){
 				break;
 						
 				case 2:
-					include('http://soundcloud.com/login');
+					include('http://soundcloud.com/');
 				break;
 				
 				case 3: 
