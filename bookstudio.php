@@ -5,7 +5,9 @@ if(!empty($_GET)){
 	$page = "";
 }
 ?>
-	<style>#sound, #skjul{padding: 1em; width: 16em; height: 1em; color: white;
+		<style>#sound, #skjul{
+				position: relative;
+				left: 1em; padding: 1em; width: 16em; height: 1em; color: white;
 				text-shadow: 2px 1px #5B6262;				
 				border-radius: 10px; 
 				-webkit-touch-callout: none;
@@ -15,11 +17,14 @@ if(!empty($_GET)){
                                 -ms-user-select: none;
                                 user-select: none;
                                 cursor: pointer;}
-  			#skjul{ margin-left: 400px;   }                     
+  			#skjul{   } 
+  			#fader{ background-image: url('fader_background.png'); background-size: 100% 100%; border: solid black 2px; border-radius: 10px; width: 48em; height: 3em; left-margin: auto; right-margin: auto;}                   
                        </style>
 		<script src="audio_gallery.js"></script>
-		<div id="sound" class="menu_button"><strong>Lytt til eksempler på lyd fra studioet.</strong></div>
-		<div id="skjul" class="menu_button"><strong>Skjul Lydavspilleren.</strong></div>
+		<div id="fader">
+			<div id="sound" class="menu_button"><strong>Lytt til eksempler på lyd fra studioet.</strong></div>
+			<div id="skjul" class="menu_button"><strong>Skjul Lydavspilleren.</strong></div>
+		</div>
 		<div id="audio_samples">
 			<h1>Lydgalleri fra SoundCloud</h1>
 			<!-- Legger til soundcloud playlist -->
