@@ -9,17 +9,17 @@ if(!empty($_GET)){
 	<div id="adminframe"> <!-- Hovedvindu-->
 		<section id="navigasjon"> <!-- Navigasjonsbar-->
 			<button id="mail"> <!-- Epost knapp, access login gmail-->
-				<a href="intern.php?page=1">
+				<a href="internkladd.php?page=1">
 					E-post
 				</a>
 			</button>
 			<button id="soundcloud">
-				<a href="intern.php?page=2"> <!-- Soundcloud admin knapp, access login soundcloud-->
+				<a href="internkladd.php?page=2"> <!-- Soundcloud admin knapp, access login soundcloud-->
 					Soundcloud Admin
 				</a>
 			</button>
 			<button id="kalender"> 
-				<a href="intern.php?page=3"> <!-- trykkbar versjon av kalender html, endringer skjer her-->
+				<a href="internkladd.php?page=3"> <!-- trykkbar versjon av kalender html, endringer skjer her-->
 					Kalender Admin
 				</a>
 			</button>
@@ -29,11 +29,11 @@ if(!empty($_GET)){
 				switch($page)
 				{
 				 case 1:
-					include('https://mail.google.com');
+					include('http://mail.google.com');
 				break;
 						
 				case 2:
-					include('https://soundcloud.com/login');
+					include('http://soundcloud.com/login');
 				break;
 				
 				case 3: 
