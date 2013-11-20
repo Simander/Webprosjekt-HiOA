@@ -115,22 +115,25 @@ table
 		<script type = "text/javascript">
 			$('#week')document.write(weekno);
 		</script>
-	<div class="kalender boks">
+	<div class="kalenderboks">
 		<table border="1">
-		<script type="text/javascript">
-		$(document).ready(function(){
-			$('div.farge').click(function(){
-				$(this).css({'background-color':'red'});
-				$(this).text('opptatt');
-				$opptatt = true;
-			});
-			$('div.farge').dblclick(function(){
-				$(this).css({'background-color':'green'});
-				$(this).text('ledig');
-				$(this)opptatt = false;
-			});
-		}); 
-		</script>
+			<script type="text/javascript">
+			$(document).ready()
+			function({
+				$('div.farge').click(
+				function(){
+					$(this).css({'background-color':'red'});
+					$(this).text('opptatt');
+					$opptatt = true;
+				});
+				$('div.farge').dblclick(
+				function(){
+					$(this).css({'background-color':'green'});
+					$(this).text('ledig');
+					$(this)opptatt = false;
+				});
+			}); 
+			</script>
 		<tr>
 			<th>Time</th>
 			<th>
@@ -208,8 +211,9 @@ table
 					ledig
 				</div>
 				</td>
+				
 			</tr>
-	<tr>
+		<tr>
 				<td>01:00</td>
 				<td>
 					<div class="farge">
@@ -1081,6 +1085,5 @@ table
 				</td>
 			</tr>
 		</table>
-		
 	</div>	
 </body>
