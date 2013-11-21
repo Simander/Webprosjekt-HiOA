@@ -82,6 +82,7 @@ if(!empty($_GET)){
                         <section id="bottom_bar">
                                 <footer>
                                         <p>Copyright: Studio Flagolett</p>
+                                        <p>kontakt.flagolett@gmail.com</p>
                                 </footer>
                         </section>
                 </div>
