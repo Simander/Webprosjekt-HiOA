@@ -9,7 +9,6 @@ body{
 }
 /*midtstilt blokk med gjennomsiktig bakgrunn */
 #centre{
-	background-color: white;
 	background: rgb(255, 255, 255);
 	background: rgba(255, 255, 255, 0.5); 
 	max-width: 80%;
@@ -49,6 +48,7 @@ header{
 	margin-left: 2em;
 }
 #logostor{
+		margin-left: 4.5em;
 		position: relative;
 		width: 20em;
 		height: 5em;
