@@ -11,14 +11,21 @@
 	
 	<div class="innhold">
 	
-		<h3>
+		<h3 id="andersen">
 			Anders Simonsen 
 		</h3>
 		<figure id="anders">
 			<!-- sett inn bilde med noe grei size -->
 		</figure>
 		<script>
-		</script>		
+				$(document).ready(function(){
+					$(".anders").hide();
+					$("#andersen").click(function(){
+					$(".anders").toggle();
+					});
+					});
+			</script>
+		
 		<article class="anders">
 			
 			<p>
@@ -52,7 +59,7 @@
 				</p>
 		
 		</article>
-		<h3>
+		<h3 id="joakim">
 			Joakim Tømmer
 			</h3>
 			<figure id="joakim">
@@ -62,7 +69,11 @@
 			</figure>
 			<script>
 				$(document).ready(function(){
-				.joakim hidden
+					$(".joakim").hide();
+					$("#joakim").click(function(){
+					$(".joakim").toggle();
+					});
+					});
 			</script>
 		<article class="joakim">	
 			<p>
