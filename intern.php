@@ -9,7 +9,7 @@ session_start();
 if (isset($_SESSION['innlogget'])) {
 
 
-	echo "<p>DU KLARTE Å LOGGE DEG INN!! WHOPPPPP" . $_SESSION['navn'] . "</p>"; 
+	 include "internkladd.php"; 
 
 }
 
