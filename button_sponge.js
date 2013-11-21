@@ -17,11 +17,11 @@ $(document).ready(function(){
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 1:                                        
                 bilde_galleri[1]=new Image();
                 //setter bildet i bilde_galleri[1]'s kilde:
-                bilde_galleri[1].src="http://ksj.mit.edu/sites/default/files/images/tracker/2011/SpongeBob-Squarepants.png";
+                bilde_galleri[1].src="guitar_rig.jpg";
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 2:                                        
                 bilde_galleri[2]=new Image();
                 //setter bildet i bilde_galleri[2]'s kilde:
-                bilde_galleri[2].src="http://images4.wikia.nocookie.net/__cb20120807051902/poohadventures/images/a/a7/Spongebob009.gif";
+                bilde_galleri[2].src="drumkit_joakim.jpg";
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 3:                                        
                 bilde_galleri[3]=new Image();                
                 //setter bildet i bilde_galleri[3]'s kilde:                
