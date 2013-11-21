@@ -13,7 +13,7 @@ body{
 	background: rgb(255, 255, 255);
 	background: rgba(255, 255, 255, 0.5); 
 	max-width: 80%;
-	min-width: 40em;
+	min-width: 60em;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -122,10 +122,15 @@ a:active{color: #FF6600;
 /*kontakt skjema*/
 #kontakt_skjema{
 		width: 38em;
-		background-color: #5A5A5A;
+		background: -webkit-linear-gradient(#4D6277 , #001F3D 85%, #4D6277);
+		background: -o-linear-gradient(#4D6277, #001F3D 85%, #4D6277);
+		background: -moz-linear-gradient(#4D6277, #001F3D 85%, #4D6277);
+		background: linear-gradient(#4D6277, #001F3D 85%, #4D6277);
 		padding: 1em;
+		border: solid black 1px;
 		border-radius: 15px;
 }
+
 .mail_form{
 		color: white;
 }
