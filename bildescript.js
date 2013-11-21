@@ -13,7 +13,7 @@ $(document).ready(function(){
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 0:
                 bilde_galleri[0] = new Image();
                 //setter bildet i bilde_galleri[0]'s kilde:
-                bilde_galleri[0].src="desk.jpg";
+                bilde_galleri[0].src="bilder/desk.jpg";
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 1:                                        
                 bilde_galleri[1]=new Image();
                 //setter bildet i bilde_galleri[1]'s kilde:
@@ -21,11 +21,11 @@ $(document).ready(function(){
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 2:                                        
                 bilde_galleri[2]=new Image();
                 //setter bildet i bilde_galleri[2]'s kilde:
-                bilde_galleri[2].src="jokkekit.jpg";
+                bilde_galleri[2].src="bilder/jokkekit.jpg";
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 3:                                        
                 bilde_galleri[3]=new Image();                
                 //setter bildet i bilde_galleri[3]'s kilde:                
-                bilde_galleri[3].src="drumconsole.jpg";                        
+                bilde_galleri[3].src="bilder/drumconsole.jpg";                        
                 /* nye bilder legges til på samme måte:
                         bilde_galleri[i] = new Image();
                         bilde_galleri[i].src="bilde.jpg";
