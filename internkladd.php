@@ -33,11 +33,11 @@ if(!empty($_GET)){
 				switch($page)
 				{
 				 case 1:
-					include('http://mail.google.com');
+					include('epost.html');
 				break;
 						
 				case 2:
-					include('http://soundcloud.com/');
+					include('soundcloud.html');
 				break;
 				
 				case 3: 

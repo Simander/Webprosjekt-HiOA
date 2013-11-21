@@ -1,4 +1,4 @@
-<script src="/easter_implementation.js"></script>
+<script src="easter_implementation.js"></script>
 <div id="kontakt_skjema">
   <form action="mailform.php" method="post">
   
