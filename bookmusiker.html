@@ -9,24 +9,22 @@
 		<b>Book Musiker</b>
 	</h2>
 	
-	<div class="innhold">
-	
+		<div class="innhold">
+		<script src="fader_info.js"></script>
 		<h3 id="andersen">
 			Anders Simonsen 
 		</h3>
-		<figure id="anders">
-			<!-- sett inn bilde med noe grei size -->
-		</figure>
-		<script>
-				$(document).ready(function(){
-					$(".anders").hide();
-					$("#andersen").click(function(){
-					$(".anders").toggle();
-					});
-					});
-			</script>
+		
+		<div id="fader1" class="fader">
+			<div id="vis1" class="menu_button"><strong>Vis info:</strong></div>
+			<div id="skjul1" class="menu_button"><strong>Skjul info:</strong></div>
+		</div>
+		
 		
 		<article class="anders">
+			<figure id="anders">
+			<!-- sett inn bilde med noe grei size -->
+			</figure>
 			
 			<p>
 				Anders er fra fjellbygda Dombås i Oppland.
@@ -62,20 +60,17 @@
 		<h3 id="joakim">
 			Joakim Tømmer
 			</h3>
+			
+			<div id="fader2" class="fader">
+				<div id="vis2" class="menu_button"><strong>Vis info:</strong></div>
+				<div id="skjul2" class="menu_button"><strong>Skjul info:</strong></div>
+			</div>
+			
+		<article class="joakim">
 			<figure id="joakim">
 				<img src="bilder/joakim.jpg" height="200" width="200">
-				</img>
 				<!-- sett inn bilde med noe grei size -->
 			</figure>
-			<script>
-				$(document).ready(function(){
-					$(".joakim").hide();
-					$("#joakim").click(function(){
-					$(".joakim").toggle();
-					});
-					});
-			</script>
-		<article class="joakim">	
 			<p>
 				Joakim er en musiker opprinnelig fra Lørenskog.
 				Hans hoved instrument er Trommer, men spiller også gitar og bass.
