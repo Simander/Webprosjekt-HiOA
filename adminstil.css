@@ -1,6 +1,6 @@
 #adminframe {
 	border-style: solid;
-	background-color: black;
+	background-color: white;
 	position: fixed;
 	left: 0px;
 	
@@ -9,7 +9,8 @@
 	background-color: white;
 	}
 button {
-	background-color: green;
+	background-color: black;
+	color: white;
 	}
 
 	
