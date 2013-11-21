@@ -68,9 +68,9 @@
                 <div id="bilde_boks">
                         
                         <!-- henter inn javascript for bildegalleri -->
-                        <script src="button_sponge.js"></script>
+                        <script src="bildescript.js"></script>
                         <!-- setter default bildet, samme bilde som bilde_galleri[0] i button_sponge.js -->
-                        <img id="mittBilde" src="http://images.fanpop.com/images/image_uploads/spongerocker-spongebob-squarepants-723640_800_601.jpg" alt="bildegalleri">
+                        <img id="mittBilde" src="bilder/desk.jpg" alt="bildegalleri">
                         <!-- knapper for å bytte mellom bildene i bilde galleriet -->
                         <div id="knappar">                        
                                 <div class="bilde_button" id="left" ><h2 class="knappe_tekst"> &lt; </h2></div>
