@@ -305,6 +305,8 @@ footer{
   		width: 100%;
   		height: 3em;
 }
+#skjul{display: none;}
+#audio_samples{display:none;}
 #soundcloud{ 
 		width: 100%;
 		border: solid black 2px;
