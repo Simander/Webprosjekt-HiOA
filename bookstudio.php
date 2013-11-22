@@ -26,7 +26,7 @@ if(!empty($_GET)){
                                 switch($page)
 								{                                
                                 default:
-									include('kalender.html');
+									include('kalender_client.html');
 								}
 								?>
 			
