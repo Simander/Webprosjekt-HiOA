@@ -29,7 +29,6 @@ var day = currentTime.getDate()
 var year = currentTime.getFullYear()
 if (day > month.length){
 	month++}
-var opptatt = false
 </script>
 <style>
 .farge
@@ -115,20 +114,25 @@ table
 	<div class="kalenderboks">
 		<table id="kalenderen" border="1">
 			<script>
+  
 			$(document).ready(function(){
 				$('div.farge').click(function(){
 					$(this).css({'background-color':'red'});
 					$(this).text('opptatt');
-					$(this).opptatt('true');
-					//if (this).text == ('opptatt')
-					//{	
-						//(this) var opptatt = true;
-					//}
+					$(this).opptatt = true;
+					$.post("something.txt",
+					{
+						'opptatt'
+					},
+					function(data,status){
+						alert("Data: " + data + "\nStatus: " + status);
+					}));
 				});
 				$('div.farge').dblclick(function(){
 					$(this).css({'background-color':'green'});
 					$(this).text('ledig');
-					$(this).opptatt('false');
+					$(this).opptatt = true;
+					//$(this).opptatt('false');
 					//if (this).text == ('ledig')
 					//{	
 						//(this) var opptatt = false;
@@ -303,6 +307,15 @@ table
 					ledig
 						<script>
 							var opptatt = false;
+							
+						//	if (this).click
+						//	{
+							//	(this)opptatt = true;
+							//}
+							//if (this).dblclick
+							//{
+								//(this)opptatt = false;
+							//}
 						</script>
 					</div>
 				</td>
