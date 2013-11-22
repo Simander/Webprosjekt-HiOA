@@ -13,19 +13,19 @@ $(document).ready(function(){
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 0:
                 bilde_galleri[0] = new Image();
                 //setter bildet i bilde_galleri[0]'s kilde:
-                bilde_galleri[0].src="http://images.fanpop.com/images/image_uploads/spongerocker-spongebob-squarepants-723640_800_601.jpg";
+                bilde_galleri[0].src="bilder/desk.jpg";
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 1:                                        
                 bilde_galleri[1]=new Image();
                 //setter bildet i bilde_galleri[1]'s kilde:
-                bilde_galleri[1].src="guitar_rig.jpg";
+                bilde_galleri[1].src="bilder/andersgitrig.jpg";
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 2:                                        
                 bilde_galleri[2]=new Image();
                 //setter bildet i bilde_galleri[2]'s kilde:
-                bilde_galleri[2].src="drumkit_joakim.jpg";
+                bilde_galleri[2].src="bilder/jokkekit.jpg";
                 //oppretter et nytt bildeobjekt i bilde_galleri arrayets indeks 3:                                        
                 bilde_galleri[3]=new Image();                
                 //setter bildet i bilde_galleri[3]'s kilde:                
-                bilde_galleri[3].src="http://images6.fanpop.com/image/photos/33200000/Spongebob-Patrick-spongebob-squarepants-33210739-1731-1068.jpg";                        
+                bilde_galleri[3].src="bilder/drumconsole.jpg";                        
                 /* nye bilder legges til på samme måte:
                         bilde_galleri[i] = new Image();
                         bilde_galleri[i].src="bilde.jpg";
@@ -40,11 +40,11 @@ $(document).ready(function(){
                                         $i-=1;
                                 else if($i == 0)
                                         $i = $siste_bilde;
-				$("#mittBilde").stop();
-				$("#mittBilde").fadeOut(0);
-				document.getElementById("mittBilde").src = bilde_galleri[$i].src;
-				$("#mittBilde").fadeIn(600);
-				            
+                                $("#mittBilde").stop();
+                                $("#mittBilde").fadeOut(0);
+                                document.getElementById("mittBilde").src = bilde_galleri[$i].src;
+                                $("#mittBilde").fadeIn(600);
+                                            
                 });
                                 
                 //Bestemmer hva som skjer om knapp #right klikkes. ingen linjer kan fjernes!!
@@ -53,9 +53,9 @@ $(document).ready(function(){
                                             $i+=1;
                                 else if($i == $siste_bilde)
                                         $i = 0;
-				$("#mittBilde").stop();
-				$("#mittBilde").fadeOut(0);
-				document.getElementById("mittBilde").src = bilde_galleri[$i].src;
-				$("#mittBilde").fadeIn(600);
+                                $("#mittBilde").stop();
+                                $("#mittBilde").fadeOut(0);
+                                document.getElementById("mittBilde").src = bilde_galleri[$i].src;
+                                $("#mittBilde").fadeIn(600);
                 });
 });

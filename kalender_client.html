@@ -1,7 +1,3 @@
-
-<html>
-<head>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script> 
             window.onload = function() {
                 var labels = document.getElementsByTagName('table');
@@ -19,45 +15,19 @@
                 }
             }
         </script>
-<!--	<script src="kalender.js"></script> -->
-	<script type="text/javascript">
-<!--	$(document).ready(function(){
-<!--
+
+		<script>
 var currentTime = new Date()
 var month = currentTime.getMonth() + 1
 var day = currentTime.getDate()
 var year = currentTime.getFullYear()
 if (day > month.length){
 	month++}
+var opptatt = false
 </script>
-<style>
-.farge
-{
-	background-color: green;
-	cursor: pointer;
-	*.unselectable {
-   -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-
-   /*
-     Introduced in IE 10.
-     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-   */
-   -ms-user-select: none;
-   user-select: none;
-}
-}
-
-table
-{
-	background-color: black;
-	color: white;
-}
-</style>
-<body>
-	<h2 id="mnd">test</h2>
-		<script type = "text/javascript">
+	<div class="kalenderboks">
+	<h2 id="mnd"> test </h2>
+		<script>
 			$('#mnd').text('Apekatt');
 			if (month == 1)
 			{
@@ -108,43 +78,23 @@ table
 				$('#mnd').text('Desember');
 			}
 		</script>
-		<h2 id = "week">
-			
-		</h2>
-	<div class="kalenderboks">
+	
 		<table id="kalenderen" border="1">
-			<script>
-  
+			<!--<script>
 			$(document).ready(function(){
 				$('div.farge').click(function(){
 					$(this).css({'background-color':'red'});
 					$(this).text('opptatt');
-					$(this).opptatt = true;
-					 var shout_text = $("optatt").val(true);
-
-						var shout = $.ajax({
-							  type: 'POST',
-							  url: "something.txt",
-							  data: {message:shout_text},
-							  success: function(){ 
-
-				
-				}
-				});				
+					//$opptatt = true;
 				});
 				$('div.farge').dblclick(function(){
 					$(this).css({'background-color':'green'});
 					$(this).text('ledig');
-					$(this).opptatt = true;
-					//$(this).opptatt('false');
-					//if (this).text == ('ledig')
-					//{	
-						//(this) var opptatt = false;
-					//}
 					//$(this)opptatt = false;
 				});
 			}); 
 			</script>
+			-->
 		<tr>
 			<th>Time</th>
 			<th>
@@ -310,16 +260,7 @@ table
 					<div class="farge">
 					ledig
 						<script>
-							var opptatt = false;
-							
-						//	if (this).click
-						//	{
-							//	(this)opptatt = true;
-							//}
-							//if (this).dblclick
-							//{
-								//(this)opptatt = false;
-							//}
+							$opptatt = false;
 						</script>
 					</div>
 				</td>
@@ -3079,4 +3020,4 @@ table
 			</tr>
 		</table>
 	</div>	
-</body>
+

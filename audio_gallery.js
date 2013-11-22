@@ -1,15 +1,13 @@
 $(document).ready(function(){
 		//knapp lyd switch
-		$("#audio_samples").hide();
-		$("#skjul").hide();
 		$("#sound").click(function(){
 			$("#audio_samples").toggle("fast");
 			$("#sound").toggle();
 			$("#skjul").toggle();
 			 var knapp1=$("#sound");  
-    				knapp1.animate({left:'29em'},"slow");
+    				knapp1.animate({left:'62%'},"slow");
     			var knapp2=$("#skjul");  
-    				knapp2.animate({left:'29em'},"slow");
+    				knapp2.animate({left:'62%'},"slow");
 		}); 
 		$("#skjul").click(function(){
 			$("#audio_samples").toggle("fast");

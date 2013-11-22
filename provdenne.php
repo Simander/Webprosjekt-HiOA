@@ -1,11 +1,10 @@
-
-
+<meta charset="utf-8">
 
 
 <?php
-error_reporting(E_ALL);
-session_start();
 
+
+session_start();
 if (isset ($_POST ['knapp'])) {
 
 //sjekk om brukernavn og passord er riktig

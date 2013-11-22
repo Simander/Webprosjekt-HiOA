@@ -21,7 +21,7 @@ if(!empty($_GET)){
                                 <header>
                                         <!-- Vi kan eventuelt gjøre så overskiften endres etter ?page -->
                                         <!--  med php if/elseif statements og php include -->
-                                        <img id="logostor" src="Logo3.png">
+                                        <img id="logostor" src="Logo3.png" alt="Bedrift logo">
                                 </header>
                         <br>
                                 <div id="nav_menu">
@@ -50,7 +50,7 @@ if(!empty($_GET)){
                                 break;
                                         
                                 case 2:
-									include('bookmusiker.html');
+									include('bookmusiker.php');
                                 break;
                                 
                                 case 3: 
@@ -82,6 +82,7 @@ if(!empty($_GET)){
                         <section id="bottom_bar">
                                 <footer>
                                         <p>Copyright: Studio Flagolett</p>
+                                        <p>kontakt.flagolett@gmail.com</p>
                                 </footer>
                         </section>
                 </div>

@@ -1,0 +1,58 @@
+<?php error_reporting(E_ALL)?>
+<h1>Din henvendelse er sendt!</h1>
+ 
+<?php
+session_start();
+if (isset($_POST))
+{
+	if (!isset($_POST['navn']) OR !isset($_POST['epost']))
+	{
+		echo ("Du må fylle ut alle feltene!");
+	}
+	else
+	{
+		$sendto = "bringsli@live.no"; // Skriv inn din e-mail.
+		$subject = "Kontaktskjema ".$_POST['navn']; // Her velger du tittel.
+		$tlf =
+		$ip = ( $_SERVER["REMOTE_ADDR"] );
+		$message = "
+			Navn: ".$_POST['navn']."
+			Tlf:  ".$_POST['tlf'] . "
+			E-post: ".$_POST['epost']."
+			Tekst: ".$_POST['tekst']."
+			IP-adresse :".$ip."";
+		
+		
+		$headers = "Fra: ".$_POST['navn']."";
+		mail($sendto, $subject, $message, $headers);
+		echo ("<p style=\"font-weight : bold;\">Din henvendelse er sendt!</p>");
+ 
+	}
+}
+else{
+echo "Gå tilbake";
+}
+
+
+?>
+?php
+session_start();
+$navn = $_REQUEST['navn'];
+$tlf = $_REQUEST['tlf'];
+$epost = $_REQUEST['epost'];
+$melding = $_REQUEST['melding'];
+$_SESSION["navn"]= $_REQUEST['navn'];
+$_SESSION["tlf"]= $_REQUEST['tlf'];
+$_SESSION["epost"]= $_REQUEST['epost'];
+$_SESSION["melding"]= $_REQUEST['melding'];
+$mottaker = "mwikant@online.no";
+$subject = "php";
+$body = "Hendvendelse fra: " . $navn . "\n Telefonnummer: " . $tlf ."\n Epost: " . $epost . "\n" . $melding;
+mail($mottaker,$subject,$body);
+
+if(isset($_REQUEST['knapp']))
+{
+    echo"Hei $navn!<br/> Takk for din hendvendelse.<br/>";
+    echo"Vennligst sjekk om dataene er riktig:<br/>Navn: $navn <br/> Telefonnummer: $tlf <br/> E-post adresse: $epost <br/>";
+    echo "<a href='mail2.php'> Vertifiser </a>";
+   
