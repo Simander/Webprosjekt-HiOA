@@ -13,11 +13,11 @@ if (isset($_POST))
 	{
 		$sendto = "kontakt.flagolett@gmail.com"; // Skriv inn din e-mail.
 		$subject = "Kontaktskjema ".$_POST['navn']; // Her velger du tittel.
-		$tlf =
+	
 		$ip = ( $_SERVER["REMOTE_ADDR"] );
 		$message = "
 			Navn: ".$_POST['navn']."
-			Tlf:  ".$_POST['tlf'] . "
+		
 			E-post: ".$_POST['epost']."
 			Tekst: ".$_POST['tekst']."
 			IP-adresse :".$ip."";
