@@ -29,7 +29,6 @@ var day = currentTime.getDate()
 var year = currentTime.getFullYear()
 if (day > month.length){
 	month++}
-var weekno = today.getWeek()
 var opptatt = false
 </script>
 <style>
@@ -113,11 +112,8 @@ table
 		<h2 id = "week">
 			
 		</h2>
-		<script type = "text/javascript">
-			$('#week')document.write(weekno);
-		</script>
 	<div class="kalenderboks">
-		<table border="1">
+		<table id="kalenderen" border="1">
 			<script>
 			$(document).ready(function(){
 				$('div.farge').click(function(){
@@ -296,9 +292,9 @@ table
 				<td>
 					<div class="farge">
 					ledig
-						<!--<script>
+						<script>
 							$opptatt = false;
-						</script>-->
+						</script>
 					</div>
 				</td>
 				<td>	
