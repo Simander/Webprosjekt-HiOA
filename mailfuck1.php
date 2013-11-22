@@ -2,7 +2,7 @@
 <h1>Din henvendelse er sendt!</h1>
  
 <?php
-session_start();
+
 if (isset($_POST))
 {
 	if (!isset($_POST['navn']) OR !isset($_POST['epost']))
