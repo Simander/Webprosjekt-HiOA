@@ -134,6 +134,9 @@ a:active{color: #FF6600;
 .mail_form{
 		color: white;
 }
+.floating{
+		float: left;
+}
 #group{
 	float: left;
 }
