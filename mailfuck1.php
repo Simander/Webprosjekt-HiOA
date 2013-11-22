@@ -1,5 +1,5 @@
 <?php error_reporting(E_ALL)?>
-<h1>Din henvendelse er sendt!</h1>
+
  
 <?php
 
