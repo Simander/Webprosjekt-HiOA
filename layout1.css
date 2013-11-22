@@ -410,4 +410,35 @@ div.calendar{
 				max-width: 80%;
 				min-width: 400px;
 				overflow: scroll;
-}		
+}
+/*bookmusiker.php*/
+#joakim_bilde, #anders_bilde{
+				background-color: white;
+				border: solid black 1px;
+				float: left;
+}
+.clear_sides{
+		clear:both;
+}
+.musiker_info{
+		margin-top: 2em;
+		margin-left: 250px;
+		padding: 1em;
+		
+		background: -webkit-linear-gradient(#4D6277 5%, #AAAAAA 85%, #4D6277);
+		background: -o-linear-gradient(#4D6277 5%, #AAAAAA 85%, #4D6277);
+		background: -moz-linear-gradient(#4D6277 5%, #AAAAAA 85%, #4D6277);
+		background: linear-gradient(#4D6277 5%, #AAAAAA 85%, #4D6277);
+		border: solid black 1px;
+		border-radius: 10px;		
+}
+.musiker_info h3{
+			color: white;
+			text-shadow: 2px 1px #5B6262;
+}
+.musiker_intro{
+		color: white;			
+}
+figcaption{
+		text-align: center;
+}
