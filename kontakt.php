@@ -12,7 +12,7 @@
   </div>
 
 <div id="hidden_shell">
- <img id="shell_img" width="240" height="150" src="bilder/mixer.jpg">
+ <img id="shell_img" width="240" height="150" src="bilder/mixer.jpg" alt="bilde av mikser">
  <div id="easter_object"></div>
 </div>
  
