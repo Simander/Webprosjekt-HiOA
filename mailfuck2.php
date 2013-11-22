@@ -15,17 +15,10 @@ E-post:<br /><input type="text" name="epost" size="20" maxlength="50" tabindex="
 	Tlf:<br/ ><input type="text" name"tlf" size="20" maxlength="50" tabindex="2" />
 </p>
 
-Ønsker du å få svar på mail eller sms?: <br/> <br/>
 
-
-SMS:
-<input type="radio" name="kunde" value="sms"/><br/><br/>
-
-MAIL:
-<input type="radio" name="kunde" value="mail"/><br/><br/>
  
 <p id="e-post_melding">Melding:<br />
-<textarea cols="72" rows="10" name="tekst" tabindex="3" class="e-post_melding"> Skriv din melding her..
+<textarea cols="72" rows="10" name="tekst" tabindex="3" class="e-post_melding"> Skriv din melding her, så tar vi kontakt videre...
 </textarea><br/>
 
 
