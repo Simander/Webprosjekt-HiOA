@@ -1,7 +1,7 @@
 $(document).ready(function(){
 		//knapp lyd switch
 		$("#sound").click(function(){
-			$("#audio_samples").toggle("fast");
+			$("#audio_samples").fadeToggle();
 			$("#sound").toggle();
 			$("#skjul").toggle();
 			 var knapp1=$("#sound");  
@@ -10,7 +10,7 @@ $(document).ready(function(){
     				knapp2.animate({left:'62%'},"slow");
 		}); 
 		$("#skjul").click(function(){
-			$("#audio_samples").toggle("fast");
+			$("#audio_samples").fadeToggle();
 			$("#skjul").toggle();
 			$("#sound").toggle();
 			 var knapp1=$("#sound");  
