@@ -91,7 +91,7 @@ if(!empty($_GET)){
                                 <footer>
                                         <p class="footy"><strong>	
 						Copyright: Studio Flagolett
-						<br>kontakt.flagolett@gmail.com<strong></p>
+						<br>kontakt.flagolett@gmail.com</strong></p>
 					<div class="fb-like" data-href="https://www.facebook.com/flagoletten" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
                                 </footer>
                         </section>
