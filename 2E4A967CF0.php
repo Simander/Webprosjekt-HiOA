@@ -16,15 +16,15 @@ if(!empty($_GET)){
 		<div id="adminframe"> <!-- Hovedvindu-->
 			<nav id="navigasjon"> <!-- Navigasjonsbar-->
 			<!-- Epost knapp, access login gmail-->
-					<a class="button" id="mail" href="internkladd.php?page=1">
+					<a class="button" id="mail" href="2E4A967CF0.php?page=1">
 						E-post
 					</a>
 	
-					<a class="button" id="soundcloud" href="internkladd.php?page=2"> <!-- Soundcloud admin knapp, access login soundcloud-->
+					<a class="button" id="soundcloud" href="2E4A967CF0.php?page=2"> <!-- Soundcloud admin knapp, access login soundcloud-->
 						Soundcloud Admin
 					</a>
 			
-					<a class="button" id="kalender" href="internkladd.php?page=3"> <!-- trykkbar versjon av kalender html, endringer skjer her-->
+					<a class="button" id="kalender" href="2E4A967CF0.php?page=3"> <!-- trykkbar versjon av kalender html, endringer skjer her-->
 						Kalender Admin
 					</a>
 			</nav>
