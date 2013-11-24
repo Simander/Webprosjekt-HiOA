@@ -13,6 +13,7 @@ if(!empty($_GET)){
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans:600|Stoke' rel='stylesheet' type='text/css'>
                 <meta charset="UTF-8">
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+				<script src="admin.js"></script>
                 <title>Studio Flagolett</title>
         </head>
         <body>
