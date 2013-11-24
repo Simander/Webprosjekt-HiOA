@@ -367,7 +367,6 @@ footer{
                  padding-top: 2em;
 }
 div .bilde_button{
-                 color: none;
                  width: 1em;
                  height: 100%;
                  cursor: pointer;
@@ -473,7 +472,9 @@ figcaption{
 {
         background-color: green;
         cursor: pointer;
-        *.unselectable {
+
+}
+        .unselectable {
    -moz-user-select: -moz-none;
    -khtml-user-select: none;
    -webkit-user-select: none;
@@ -483,10 +484,7 @@ figcaption{
      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
    */
    -ms-user-select: none;
-   user-select: none;
 }
-}
-
 table
 {
         background-color: black;
@@ -499,7 +497,8 @@ table
 		margin-top: 2em;
 		margin-right: 2em;
 		padding: 1em;
-		height: 255px;
+		margin-left: 2em;
+		height: 245px;
 		width: 500px;
 		background: -webkit-linear-gradient(#4D6277 5%, #AAAAAA 85%, #4D6277);
 		background: -o-linear-gradient(#4D6277 5%, #AAAAAA 85%, #4D6277);
@@ -518,7 +517,7 @@ table
 							background-color: white;
 							border: solid black 1px;
 							margin-left: 0;
-							margin-right: 200;
+							margin-right: 0;
 							margin-top: 2em;
 							width: 200px;
 							float: left;
