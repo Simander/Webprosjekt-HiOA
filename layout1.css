@@ -406,18 +406,25 @@ div .bilde_button{
 div.kalenderboks{
 				max-width: 80%;
 				min-width: 400px;
-				overflow: scroll;
+				
 }				
 div.calendar{
 				max-width: 80%;
 				min-width: 400px;
-				overflow: scroll;
+				
 }				
 #kalenderen{
 				max-width: 80%;
 				min-width: 400px;
-				overflow: scroll;
+				
 }
+#kalenderbilde{
+				border: solid;
+				width: 634px;
+				height: 348px;
+				
+}
+
 /*bookmusiker.php*/
 #joakim_bilde, #anders_bilde{
 				background-color: white;

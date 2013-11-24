@@ -21,7 +21,16 @@ if(!empty($_GET)){
 	</h2>
 	
 	<div class="innhold">
-		<div class="calendar>
+		<div class="calendar">
+			<p>
+				Nedenfor ser du et bilde av booking systemet vårt som er under utvikling. Dette vil være tilgjengelig ved
+				et senere tidspunkt.
+			</p>
+			<p>
+				<strong>Om du ønsker å booke studiotid send oss en mail via kontakt skjemaet under "kontakt oss"</strong>
+			</p>
+			
+		
 			  <?php
                                 switch($page)
 								{                                
