@@ -1,2 +1,5 @@
 Easter egget vårt finner dere på siden "kontakt oss" der er det et bilde av en mixer i kontakt skjemaet.
 Klikk på lyset og få en overraskelse! :D
+
+For å komme til admin delen av siden har vi implementert en nødløsning: tast inn hexadecimal koden: 2E4A967CF0,
+hvor som helst på siden og du vil bli transportert dit! :D
