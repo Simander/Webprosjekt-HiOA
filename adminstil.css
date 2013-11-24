@@ -9,7 +9,7 @@ body{
 #adminframe {
 	border-style: solid;
 	background: rgb(255, 255, 255);
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.8);
 	padding: 2em;
 	width: 65%;
 	margin-left: auto;
