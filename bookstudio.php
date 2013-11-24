@@ -83,6 +83,6 @@ if(!empty($_GET)){
 				<li>
 					15000,- for en hel uke, 8-10 timer dagen.
 				</li>
-			<ul>
+			</ul>
 		</article>
 	</div>
