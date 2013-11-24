@@ -8,27 +8,26 @@ if(!empty($_GET)){
 
 <head>
 	<link rel="stylesheet" title="layout1" href="adminstil.css">
+	<meta charset="UTF-8">
+	<title>Admin</title>
 </head>
 <body>
 	<div id="adminframe"> <!-- Hovedvindu-->
-		<section id="navigasjon"> <!-- Navigasjonsbar-->
-			<button id="mail"> <!-- Epost knapp, access login gmail-->
-				<a href="internkladd.php?page=1">
+		<nav id="navigasjon"> <!-- Navigasjonsbar-->
+		<!-- Epost knapp, access login gmail-->
+				<a class="button" id="mail" href="internkladd.php?page=1">
 					E-post
 				</a>
-			</button>
-			<button id="soundcloud">
-				<a href="internkladd.php?page=2"> <!-- Soundcloud admin knapp, access login soundcloud-->
+
+				<a class="button" id="soundcloud" href="internkladd.php?page=2"> <!-- Soundcloud admin knapp, access login soundcloud-->
 					Soundcloud Admin
 				</a>
-			</button>
-			<button id="kalender"> 
-				<a href="internkladd.php?page=3"> <!-- trykkbar versjon av kalender html, endringer skjer her-->
+		
+				<a class="button" id="kalender" href="internkladd.php?page=3"> <!-- trykkbar versjon av kalender html, endringer skjer her-->
 					Kalender Admin
 				</a>
-			</button>
-		</section>
-		<div id="include"> <!-- vindu hvor sidene blir inkludert-->
+		</nav>
+		<section id="include"> <!-- vindu hvor sidene blir inkludert-->
 			<?php
 				switch($page)
 				{
@@ -49,6 +48,6 @@ if(!empty($_GET)){
 					include('nothing.html');
 				}
 			?>			
-		</div>
+		</section>
 	</div>
 </body>
