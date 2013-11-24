@@ -46,7 +46,7 @@ if(!empty($_GET)){
 		<article class="om">
 			<p>
 				Studio flagolett har vært i drift siden 20.10.2013 og inneholder det som trengs for å
-				gjøre en god musikk produksjon.
+				gjøre en god musikk produksjon til en rimelig pris.
 			</p>			
 			<h2> Utstyr </h2>
 			<!-- Les mer -->
@@ -55,7 +55,7 @@ if(!empty($_GET)){
 			</figure>			
 			<ul>
 				<li>
-					Et stort utvalg av Sennheiser mikrofoner
+					Et stort utvalg av akg og Sennheiser mikrofoner
 				</li>
 				<li>
 					Cubase 7, Logic og Protools programvare
@@ -81,16 +81,16 @@ if(!empty($_GET)){
 			<h2> Priser </h2>
 			<ul>
 				<li>
-					500,- Per time på ukedager mellom 10:00 og 18:00
+					500,- Per time på ukedager mellom 12:00 og 18:00, inkludert teknikker
 				</li>
 				<li>
-					800,- Per time på ukedager mellom 18:00 og 22:00 og i helger.
+					800,- Per time på ukedager mellom 18:00 og 22:00 og i helger, inkludert teknikker.
 				</li>
 				<li>
-					8000,- for en hel helg, 8-10 timer dagen.
+					8000,- for en hel helg, 8-10 timer dagen, inkludert teknikker.
 				</li>
 				<li>
-					15000,- for en hel uke, 8-10 timer dagen.
+					15000,- for en hel uke, 8-10 timer dagen, inkludert teknikker.
 				</li>
 			</ul>
 		</article>
