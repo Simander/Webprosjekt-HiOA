@@ -126,17 +126,17 @@ if (day > month.length){
 					$(this).css({'background-color':'red'});
 					$(this).text('opptatt');
 					$(this).opptatt = true;
-					 var shout_text = $("optatt").val(true);
-
-						var shout = $.ajax({
-							  type: 'POST',
-							  url: "something.txt",
-							  data: {message:shout_text},
-							  success: function(){ 
+					 //var shout_text = $("optatt").val(true);
+//
+	//					var shout = $.ajax({
+		//					  type: 'POST',
+			//				  url: "something.txt",
+				//			  data: {message:shout_text},
+					//		  success: function(){ 
 
 				
-				}
-				});				
+				//}
+				//});				
 				});
 				$('div.farge').dblclick(function(){
 					$(this).css({'background-color':'green'});
