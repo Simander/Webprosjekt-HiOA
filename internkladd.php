@@ -41,7 +41,7 @@ if(!empty($_GET)){
 				break;
 				
 				case 3: 
-					include('kalender.html');
+					include('kalenderinfo.html');
 						
 				break;
 				
